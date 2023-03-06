@@ -13,3 +13,21 @@
  - ブランチを確認して、mainにいるか確認。`git branch` → `git checkout main`
  - リモートの変更差分を取り込む。`git pull`
  - 自分のブランチに移動してmainの変更をマージする。`git checkout ○○` → `git merge main`
+
+## Dockerのセットアップ
+```
+# 最初のセットアップ
+docker-compose build
+
+# コンテナ立ち上げ
+docker-compose up (-dでバックグランドで起動させる)
+
+# コンテナ停止
+docker-compose down
+
+# statusの確認
+docker-compose ps
+
+# ログの確認
+docker-compose logs
+```
