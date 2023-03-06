@@ -12,3 +12,14 @@ services:
     platform: linux/amd64
     ports:
       - "3306:3306"
+  web:
+    build:
+      context: ./project/server
+      dockerfile: Dockerfile
+    container_name: "fastapi-server"
+    volumes:
+      - ./project/server:/usr/src/server
+    ports:
+      - "8080:8080"
+    depends_on:
+      - db
