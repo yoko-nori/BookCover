@@ -7,7 +7,7 @@ services:
     container_name: "mysql"
     restart: always
     volumes:
-      - ./project/database:/var/lib/mysql
+      - ./project/database/volumes:/var/lib/mysql
       - ./project/database/my.cnf:/etc/mysql/conf.d/my.cnf
     platform: linux/amd64
     ports:
