@@ -7,11 +7,12 @@ services:
     container_name: "mysql"
     restart: always
     volumes:
-      - ./project/database/volumes:/var/lib/mysql
+      - mysql_data:/var/lib/mysql
       - ./project/database/my.cnf:/etc/mysql/conf.d/my.cnf
     platform: linux/amd64
     ports:
       - "3306:3306"
+
   web:
     build:
       context: ./project/server
@@ -23,3 +24,5 @@ services:
       - "8080:8080"
     depends_on:
       - db
+volumes:
+  mysql_data:
