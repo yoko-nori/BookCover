@@ -1,6 +1,6 @@
 FROM tiangolo/uvicorn-gunicorn-fastapi:python3.11
 
-WORKDIR /usr/src/server
+WORKDIR /usr/src/server/app
 
 COPY requirements.txt .
 RUN pip install --no-cache-dir --upgrade -r requirements.txt
