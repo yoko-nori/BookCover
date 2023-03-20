@@ -1,2 +1,9 @@
+# API
 fastapi
 uvicorn
+
+# computer vision
+opencv-python
+#opencv-contrib-python
+
+#numpy
