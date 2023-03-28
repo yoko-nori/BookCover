@@ -2,8 +2,14 @@
 fastapi
 uvicorn
 
+#basic
+pip
+pandas
+
 # computer vision
 opencv-python
-#opencv-contrib-python
 
-#numpy
+#mysqlconnector
+sqlalchemy
+mysqlclient
+mysql-connector-python
