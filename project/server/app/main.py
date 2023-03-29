@@ -3,11 +3,18 @@ from fastapi.responses import FileResponse
 import cv2
 import numpy as np
 import io
+import datetime
+import os
+
 
 app = FastAPI()
 
 @app.post("/upload_add_line")
 async def add_dotted_line(image_file: UploadFile = File(...)):
+    # 現在の時間を取得
+    now = datetime.datetime.now()
+    today = now.strftime('%M%S%f')
+
     # アップロードされた画像を読み込み
     image_bytes = await image_file.read()
     image_np = np.frombuffer(image_bytes, dtype=np.uint8)
@@ -25,8 +32,11 @@ async def add_dotted_line(image_file: UploadFile = File(...)):
     while i<w:
         img[int(y-dashp/2):int(y+dashp/2),i:i+dashw,:]=[0,0,255]
         i=i+dashw*2
+    
+    #savepath = 'C:/Users/test/Documents/bookcover/BookCover/project/server/images/'+today+'.jpg'
 
-    is_success, buffer = cv2.imwrite('grid.jpg',img)
+
+    is_success, buffer = cv2.imwrite(today+'.jpg',img)
 
 
     # 画像をバイト列にエンコード
