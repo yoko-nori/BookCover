@@ -1,0 +1,42 @@
+li{
+  list-style:none
+}
+
+.header {
+  margin-bottom:50px;
+  border: #11111111 1px solid;
+  padding: 10px 16px;
+  background-color: #fafafa;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: right;
+  align-items: flex-end
+}
+
+.header-item01{
+  border-top: solid 5px #5989cf;
+  border-bottom: solid 5px #5989cf;
+}
+
+.box {
+  /* 方眼紙模様に必須のスタイル */
+  background-image: linear-gradient(0deg, transparent calc(100% - 1px), #f0f0f0 calc(100% - 1px)),
+                    linear-gradient(90deg, transparent calc(100% - 1px), #f0f0f0 calc(100% - 1px));
+  background-size: 16px 16px;
+  background-repeat: repeat;
+  background-position: left top;
+
+  /* 以下任意のスタイル */
+  padding: 20px;
+}
+
+
