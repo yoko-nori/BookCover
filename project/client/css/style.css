@@ -3,28 +3,21 @@ li{
 }
 
 .header {
-  margin-bottom:50px;
-  border: #ffffff 1px solid;
-  padding: 10px 16px;
+  margin-bottom:10px;
+  border-bottom: #000000 3px solid;
+  padding: 10px 10px;
   background-color: #fafafa;
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 .header-list {
   display: flex;
-  align-items: center;
-  gap: 40px;
+  gap: 50px;
   font-size: 16px;
   font-weight: bold;
   text-align: right;
-  align-items: flex-end
-}
-
-.header-item01{
-  border-top: solid 5px #5989cf;
-  border-bottom: solid 5px #5989cf;
+  align-items: flex-end;
 }
 
 .box {
