@@ -1,1 +1,4 @@
+.git
+/project/client/node_modules
 README.md
+.gitignore

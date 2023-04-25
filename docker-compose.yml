@@ -1,5 +1,19 @@
 version: "3.8"
 services:
+  client:
+    build:
+      context: ./project/client
+      dockerfile: Dockerfile
+    container_name: "nextjs-client"
+    tty: true
+    volumes:
+      - ./project/client:/usr/src/client
+    ports:
+      - "3000:3000"
+    environment:
+      - WATCHPACK_POLLING=true
+    command: sh -c "npm run dev"
+
   db:
     build:
       context: ./project/database
@@ -13,11 +27,12 @@ services:
     ports:
       - "3306:3306"
 
-  web:
+  server:
     build:
       context: ./project/server
       dockerfile: Dockerfile
     container_name: "fastapi-server"
+    tty: true
     volumes:
       - ./project/server:/usr/src/server
     ports:
