@@ -1,4 +1,4 @@
 .git
-/project/client/node_modules
+/project/client/app/node_modules
 README.md
 .gitignore

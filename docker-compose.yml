@@ -2,7 +2,7 @@ version: "3.8"
 services:
   client:
     build:
-      context: ./project/client
+      context: ./project/client/
       dockerfile: Dockerfile
     container_name: "nextjs-client"
     tty: true
