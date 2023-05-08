@@ -19,6 +19,9 @@
 # 最初のセットアップ
 docker-compose build
 
+# 依存関係インストール (初回のみ)
+docker-compose run -w /usr/src/client/app --rm client npm install
+
 # コンテナ立ち上げ
 docker-compose up (-dでバックグランドで起動させる)
 
