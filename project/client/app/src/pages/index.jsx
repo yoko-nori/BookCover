@@ -4,6 +4,7 @@ import { Header } from "@/components/layouts/Header/Header"
 export default function Home() {
   return (
     <>
+      <Header />
       <Image
         src="/images/kyoto_bgimg.jpg"
         alt="清水寺"
