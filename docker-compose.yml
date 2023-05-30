@@ -21,6 +21,7 @@ services:
     container_name: "mysql"
     restart: always
     volumes:
+      - ./project/database/initdb.d:/docker-entrypoint-initdb.d
       - mysql_data:/var/lib/mysql
       - ./project/database/my.cnf:/etc/mysql/conf.d/my.cnf
     platform: linux/amd64
