@@ -1,19 +1,18 @@
 import Image from 'next/image';
 import styles from '@/features/palette/styles/PaletteButton.module.css';
 
-export const PaletteButton = ({ icon }) => {
+export const PaletteButton = ({ icon, alt, onClick }) => {
   return (
-    <>
-      <button className={styles.palette_button}>
+    <button className={styles.paletteButton} onClick={onClick}>
+      <div className={styles.imageContainer}>
         <Image
           src={icon}
-          className={styles.image_style}
-          alt='palette Button'
-          width={100}
-          height={100}
+          alt={alt}
+          fill
+          style={{ objectFit: 'contain' }}
           priority
         />
-      </button>
-    </>
+      </div>
+    </button>
   );
 };

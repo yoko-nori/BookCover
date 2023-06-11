@@ -1,17 +1,18 @@
-.palette_button {
+.paletteButton {
   border-radius: 50%;
-  padding: 0 25px;
-  color: white;
   font-weight: bold;
-  background: #C4F5FC;
+  background-color: #049ca4;
   cursor: pointer;
-  height: 50px;
-  width: 50px;
-  box-shadow: 0 4px 4px 4px #777;
+  height: 29px;
+  width: 29px;
+  box-shadow: 0 3px 4px 1px #777;
+  position: relative;
 }
 
-.image_style {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.imageContainer {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 80%;
+  height: 80%;
 }
