@@ -32,25 +32,25 @@ export const Palette = () => {
         <div className={styles.paletteButtonWarapper}>
           {/* daishi Button */}
           <PaletteButton
-            icon='/daishi.png'
+            icon='/paletteButton/daishi.png'
             alt='daishi'
             onClick={() => handleButtonClick('daishi')}
           />
           {/* color Button */}
           <PaletteButton
-            icon='/color-select.png'
+            icon='/paletteButton/color-select.png'
             alt='カラー選択'
             onClick={() => handleButtonClick('color')}
           />
           {/* stamp Button */}
           <PaletteButton
-            icon='/stamp.png'
+            icon='/paletteButton/stamp.png'
             alt='スタンプ'
             onClick={() => handleButtonClick('stamp')}
           />
           {/* text Button */}
           <PaletteButton
-            icon='/text-input.png'
+            icon='/paletteButton/text-input.png'
             alt='テキスト入力'
             onClick={() => handleButtonClick('text')}
           />
