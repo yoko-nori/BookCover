@@ -10,7 +10,7 @@ export const Palette = () => {
     <div className={styles.container}>
       <div className={styles.left_container}>
         <PaletteButton
-          icon="images/memo.png"
+          icon="/icon.png"
           onclick={() => handleButton()}
         />
       </div>
