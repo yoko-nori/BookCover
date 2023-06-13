@@ -1,0 +1,39 @@
+.paletteDaishiContianer {
+  height: 394px;
+  width: 311px;
+  margin: 24px 9px 82px;
+}
+
+.paletteGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 40%;
+}
+
+.gridItem {
+  position: relative;
+  width: 24%;
+  height: 35%;
+  box-sizing: border-box;
+  margin-right: 4px;
+}
+
+.gridItem:nth-child(n+5) {
+  margin-top: 30px;
+}
+
+.gridItem:nth-child(4n) {
+  margin-right: 0;
+}
+
+.image {
+  height: auto;
+  object-fit: cover;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 100%;
+  height: 70%;
+}
