@@ -1,6 +1,10 @@
 import { useState, useMemo } from 'react';
 import styles from '@/features/palette/styles/palette.module.css';
 import { PaletteButton } from './PaletteButton';
+import { PaletteDaishi } from './PaletteDaishi';
+import { PaletteColor } from './PaletteColor';
+import { PaletteStamp } from './PaletteStamp';
+import { PaletteText } from './PaletteText';
 
 export const Palette = () => {
   const [currentLayout, setCurrentLayout] = useState('daishi');
