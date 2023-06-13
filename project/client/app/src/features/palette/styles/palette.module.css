@@ -6,13 +6,13 @@
 .leftContainer {
   height: 353px;
   width: 40px;
-  border: 1px solid black;
   background: #C4F5FC;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  box-shadow: inset 4px 4px 6px 0px rgba(0, 0, 0, 0.21);
 }
 
 .paletteButtonWarapper {
@@ -33,7 +33,7 @@
 .right_container {
   height: 500px;
   width: 329px;
-  border: 1px solid black;
   background: #C4F5FC;
   border-radius: 15px;
+  box-shadow: inset 4px 4px 6px 0px rgba(0, 0, 0, 0.21);
 }
