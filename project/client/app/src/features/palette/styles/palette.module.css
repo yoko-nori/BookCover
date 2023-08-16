@@ -1,0 +1,39 @@
+.container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.leftContainer {
+  height: 353px;
+  width: 40px;
+  background: #C4F5FC;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  box-shadow: inset 4px 4px 6px 0px rgba(0, 0, 0, 0.21);
+}
+
+.paletteButtonWarapper {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.spacing {
+  width: 18px;
+  flex-shrink: 0;
+  background-color: transparent;
+}
+
+.right_container {
+  height: 500px;
+  width: 329px;
+  background: #C4F5FC;
+  border-radius: 15px;
+  box-shadow: inset 4px 4px 6px 0px rgba(0, 0, 0, 0.21);
+}
